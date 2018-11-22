@@ -4,6 +4,7 @@ import java.rmi.server.UnicastRemoteObject;
 
 import RMI.RemoteInterface;
 
+/*(2)*/
 public class ServerImplements extends UnicastRemoteObject implements RemoteInterface {
 	/**
 	 * 
