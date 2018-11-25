@@ -11,10 +11,10 @@ public class MainCliente {
 
 	public static void main(String[] args) {
 		try {
-			int x = 5, y = 3;
+			int x = 10, y = 3;
 
-			Registry miRegistro = LocateRegistry.getRegistry("127.0.0.1", 1234);
-			RemoteInterface ri = (RemoteInterface) miRegistro.lookup("Mate");
+			Registry miRegistro = LocateRegistry.getRegistry("192.168.1.6", 1081);
+			RemoteInterface ri = (RemoteInterface) miRegistro.lookup("rmi://localhost:3000/mate");
 			JOptionPane.showMessageDialog(null, "Resultado suma: " + ri.suma(x, y));
 		} catch (Exception e) {
 			// TODO: handle exception

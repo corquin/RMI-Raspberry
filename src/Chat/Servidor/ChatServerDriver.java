@@ -8,6 +8,7 @@ public class ChatServerDriver {
 
 	public static void main(String[] args) throws RemoteException, MalformedURLException {
 		Naming.rebind("ChatRMI", new ChatServer());
+		System.out.println("Servidor corriendo...");
 	}
 
 }
